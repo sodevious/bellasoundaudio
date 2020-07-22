@@ -1,0 +1,491 @@
+/*
+Theme Name: Shapely Child
+Theme URI: https://bellasoundaudio.com/bellasound_dev/wp-content/themes/shapely-child/
+Author: Shirley Sinkewitsch
+Author URI: https://bellasoundaudio.com/
+Template: shapely
+Description: Shapely Child Theme
+Version: 1.2.5
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: shapely
+*/
+
+/***** custom font ******/
+    @font-face {
+      font-family: Edwardian Script ITC;
+      src: url(https://bellasoundaudio.com/bellasound_dev/wp-content/themes/shapely-child/fonts/EdwardianScriptITC.ttf);
+      font-weight: normal;
+    }
+
+body {
+	background: transparent!important;
+}
+
+/****** header styling *******/
+div.search-widget-handle,
+button.search {
+	display: none;
+}
+
+button.module.widget-handle.mobile-toggle.right.visible-sm.visible-xs:hover,
+button.module.widget-handle.mobile-toggle.right.visible-sm.visible-xs:active,
+button.module.widget-handle.mobile-toggle.right.visible-sm.visible-xs:focus {
+	text-decoration: none;
+	text-decoration: none;
+	text-shadow: none;
+	border: 0 solid rgba(0,0,0,0);
+	outline: 0;
+}
+
+#site-navigation {
+	background: #0232ae;
+}
+
+#site-navigation .module.left {
+	align-self: center;
+}
+
+#site-navigation .module-group.right {
+	display: flex;
+	align-self: center;
+	margin-top: 5px;
+}
+
+ul#menu > li a {
+	text-decoration: none;
+	border: none;
+	/*color: #3e474d;*/
+	color: #fff;
+	letter-spacing: 0.05em;
+}
+
+ul#menu > li a:hover,
+ul#menu > li a:active,
+ul#menu > li a:focus {
+	text-decoration: none;
+	text-shadow: none;
+	border: 0 solid rgba(0,0,0,0);
+	outline: 0;
+	/*color: #0045bc;*/
+	color: #337ab7;
+}
+
+.site-title {
+	font-family: 'Edwardian Script ITC';
+	font-size: 4em;
+	color: #fff;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+.site-title-text {
+	font-family: 'Edwardian Script ITC';
+	font-size: 2.0em;
+	line-height: 1em;
+	padding-right: 4px;
+}
+
+a.custom-logo-link {
+	pointer: cursor;
+	text-decoration: none;
+}
+
+a.custom-logo-link > .site-title:hover,
+a.custom-logo-link > .site-title:active,
+a.custom-logo-link > .site-title:focus {
+	pointer: cursor;
+	text-decoration: none;
+	text-shadow: none;
+	outline: 0;
+	border: 0 solid rgba(0,0,0,0);
+	color: #337ab7;
+}
+
+ul.dropdown-menu {
+	border: none;
+	outline: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.bella {
+	font-family: 'Edwardian Script ITC';
+}
+
+.sup {
+	font-size: 2em;
+	vertical-align: super;
+}
+
+/****** body text styling *******/
+h3 {
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+.mb32 {
+	color: #3e474d;
+	font-size: 1.5em;
+	text-align: left;
+}
+
+.mb32 > p {
+	margin-bottom: 20px;
+}
+
+.page-title {
+	color: #fff;
+	padding-left: 15px;
+	display: none;
+}
+
+.entry-title {
+	display: none;
+}
+
+a.btn.btn-lg.btn-filled:hover,
+a.btn.btn-lg.btn-filled:active,
+a.btn.btn-lg.btn-filled:focus {
+	color: #337ab7;
+}
+
+/*a.btn.btn-lg.btn-filled {
+	content: "";
+	animation-name: fadein;
+  	animation-duration: 15s;
+  	animation-iteration-count: 1;
+}
+
+	@keyframes fadein {
+
+	  from {
+	    opacity: 0;
+	  }
+
+	  to {
+	    opacity: 1;
+	  }
+
+	}
+}
+*/
+
+.back-to-top {
+	position: fixed;
+	bottom: 75px;
+	right: 5px;
+	z-index: 1000;
+	display: none;
+}
+
+.back-to-top .fa {
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+a.btn.btn-sm.fade-half.back-to-top.inner-link,
+a.btn.btn-sm.fade-half.back-to-top.inner-link:hover,
+a.btn.btn-sm.fade-half.back-to-top.inner-link:active,
+a.btn.btn-sm.fade-half.back-to-top.inner-link:focus,
+a.btn.btn-sm.fade-half.back-to-top.inner-link:visited {
+	border: 2px solid rgb(0,69,188)!important;
+	background: rgba(0,69,188,0.8)!important;
+}
+
+.trademark {
+	display: inline;
+	vertical-align: super;
+	font-family: 'Arial', sans-serif;
+	font-size: 0.3em;
+	margin-left: 15px;
+}
+
+.tagline {
+	font-weight: 500;
+	/*color: #406dbc;*/
+	color: #fff;
+	text-shadow: rgba(0,0,0,0.8) 1px 0 10px;
+}
+
+.blue-link {
+	cursor: pointer;
+	text-decoration: none;
+	color: #0232ae;
+}
+
+.blue-link:hover,
+.blue-link:active,
+.blue-link:focus,
+.blue-link:visited {
+	text-decoration: none;
+	color: #0470D6;
+}
+
+div#shapely_home_parallax-24 > section > .parallax-window.fullscreen::after {
+	content: "";
+	position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 100vw;
+    	height: 100vh;
+    	/*background-image: url('https://bellasoundaudio.com/bellasound_dev/wp-content/uploads/piano-prog2.jpg');
+    	background-size: cover;
+    	background-repeat: none;
+    	background-position: center;*/
+	animation-name: fadeout;
+	/*animation-delay: 200ms;*/
+  	animation-duration: 10s;
+  	animation-iteration-count: 1;
+}
+
+	@keyframes fadeout {
+
+	  from {
+	    background: #000;
+	    opacity: 0.7;
+	  }
+
+	  to {
+	    background: transparent;
+	    opacity: 0;
+	  }
+
+	}
+
+/******* parallax styling *******/
+
+
+/******* about styling *******/
+#shapely_home_parallax-3 {
+	/*background: #FDDEBF;*/
+	background: #FDDFBD;
+}
+
+#shapely_home_parallax-3 img.img-responsive {
+	margin: 0 auto;
+	width: 50%;
+	padding-top: 30px;
+}
+
+#shapely_home_parallax-6 {
+	/*background: #FDDEBF;*/
+	background: #FDDFBD;
+}
+
+/******* audition section *******/
+#shapely_home_parallax-10 {
+	/*background: #FDDEBF;*/
+	background: #FDDFBD;
+}
+
+/*#shapely_home_parallax-10 > section {
+  	position: relative;
+}
+
+#shapely_home_parallax-10 > section::before {
+  	content: "";
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+  	background-image: url(https://bellasoundaudio.com/bellasound_dev/wp-content/uploads/parallax_img_4.jpg);
+  	background-repeat: none;
+  	background-size: cover;
+  	opacity: 0.15;
+}
+*/
+
+/******* products styling *******/
+#shapely_home_parallax-19 > section.bg-secondary.pb0 {
+	background: #000000;
+	border-bottom: none;
+}
+
+#shapely_home_parallax-20 > section {
+	background: #000000;
+	border-top: none;
+}
+
+#shapely_home_parallax-20 > section > container > div.row.align-children > div.col-md-4.col-md-offset-1.col-sm-5.col-sm-offset-1 {
+	margin-left: 0;
+	width: auto;
+}
+
+div#custom_html-9 {
+	background: #000;
+}
+
+ul.product-bullets {
+	width: 25em;
+	margin: 0 auto;
+	padding: 0;
+	color: #fff;
+	font-size: 2rem;
+	padding: 0 0 50px;
+	list-style-type: disc;
+}
+
+ul.product-bullets li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.white {
+	color: #ffffff;
+}
+
+body.page-id-146 div#content > section.content-area {
+	background: #000000;
+}
+
+/******* contact page styling *******/
+
+#custom_html-13 > div.textwidget {
+  	position: relative;
+}
+
+#custom_html-13 > div.textwidget::before {
+  	content: "";
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+  	background-image: url(https://bellasoundaudio.com/bellasound_dev/wp-content/uploads/parallax_img_4.jpg);
+  	background-repeat: none;
+  	background-size: cover;
+  	opacity: 0.15;
+}
+
+.address-text {
+	font-size: 1.5em;
+	margin-top: -1.4em;
+}
+
+/******* contact form styling *******/
+#shapely_home_contact-3 > section.contact-section {
+  	/*padding: 40px 0;
+  	background: #0e1015;
+  	color: white;*/
+}
+
+div.wpcf7 {
+	padding: 0 50px;
+}
+
+.wpcf7-form-control-wrap > input {
+	height: 30px;
+	margin-bottom: 0;
+}
+
+.widget input[type="submit"] {
+	background: #0232ae!important;
+	border: none!important;
+	cursor: pointer;
+}
+
+.widget input[type="submit"]:hover {
+	background: #337ab7!important;
+	border: none!important;
+	text-decoration: none!important;
+}
+
+.widget input[type="submit"]:active,
+.widget input[type="submit"]:focus {
+	background: #0232ae!important;
+	border: none!important;
+	text-decoration: none!important;
+}
+
+
+/******* terms styling *******/
+.bg-secondary {
+	background: #fff;
+	padding-top: 50px;
+}
+
+ol.terms {
+	list-style:lower-alpha;
+}
+
+/******* footer styling *******/
+/*footer .footer-credits {
+	display: none;
+}
+*/
+
+.copyright-text a:hover,
+.copyright-text a:active,
+.copyright-text a:focus {
+	text-decoration: none;
+	color: #337ab7;
+}
+
+footer.bg-dark {
+	background: #0232ae;
+}
+
+a#topper {
+	display: none;
+}
+
+br.footer-br {
+	display: none;
+}
+/****** media queries *********/
+
+@media (max-width: 1199px) {
+	.navbar-collapse {margin-top: 0; width: 100%;}
+	.container.nav-bar {width: 100%;}
+	#colophon .site-info {margin-top: 0; width: 100%;}
+}
+
+@media (max-width: 1024px) {
+	header#masthead {position: fixed; width: 100%; z-index: 999;}
+	button.module.widget-handle.mobile-toggle.right.visible-sm.visible-xs {margin-top: 10px;}
+	#shapely_home_parallax-19 {margin-top: 60px;}
+}
+
+@media (max-width: 860px) {
+	#colophon .site-info {margin-top: 0; width: 100%;}
+	div.wpcf7 {padding: 20px 0 10px;}
+}
+
+@media (max-width: 768px) {
+	button.module.widget-handle.mobile-toggle.right.visible-sm.visible-xs {margin-top: 5px;}
+	/*#shapely_home_parallax-2 .align-transform {top: 40%;}*/
+	.mb32 > p {font-size: 1.0em;}
+	br.address-br {display: block!important;}
+	div.wpcf7 {padding: 10px 0;}
+	#colophon .site-info {text-align: center; margin-top: 0; width: 100%;}
+	span.pipe {display: none;}
+	footer {padding: 30px 0;}
+	#site-navigation .module.left {width: auto;}
+	#shapely_home_parallax-3 > section,
+	#shapely_home_parallax-6 > section,
+	#shapely_home_parallax-10 > section {padding: 20px 0;}
+	section#contact-section {padding: 50px 0;}
+	body.page-id-146 section.content-area {padding: 30px 0 50px 0;}
+	#shapely_home_parallax-19 {margin-top: 30px;}
+	ul.product-bullets {width: 18em; padding: 0 0 30px 30px;}
+	#shapely_home_parallax-13 > section > div.parallax-window[style] {background-size: auto!important;}
+	#shapely_home_parallax-14 > section {padding-top: 0;}
+	br.footer-br {display: block;}
+}
+
+@media (max-width: 425px) {
+	#shapely_home_parallax-3 img.img-responsive {width: 100%!important;}
+	.back-to-top {bottom: 5px;}
+}
+
+@media (max-width: 320px) {
+	.main-navigation {padding: 0;}
+	.main-navigation .menu li a {font-size: 10px;}
+	body.page-id-146 section.content-area {padding: 0;}
+	ul.product-bullets {width: 17em; padding: 0 40px 30px 40px;}
+	.site-title {font-size: 3em;}
+	#shapely_home_parallax-2 h1 span.tagline {font-size: 0.8em;}
+}
