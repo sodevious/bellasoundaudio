@@ -10,16 +10,30 @@
         }
     }
 
+    function closeNav() {
+      $('#site-navigation .nav-bar').toggleClass('nav-open');
+      $('#site-navigation .mobile-toggle').toggleClass('toggle-search active');
+      $('.search-widget-handle').toggleClass('hidden-sm hidden-xs');
+    }
 
     function WS_Init() {
       $("span.site-title").append("<span class='trademark'>&reg;</span>"); // add span to page title with trademark and styling
        // $(".shapely_home_parallax").css("scroll-margin", $('#site-navigation').height());
       $("div.top-parallax-section").removeAttr("overflow");
-        $('body.home').find('#menu').find('a').on('click', function(ev) {
+
+        $('#site-navigation a').on('click', function(ev) {
             if($(this).attr('href').search('#') >= 0) {
                 ev.preventDefault();
                 scrollInto( $('#' + $(this).attr('href').split('#').pop()) );
+
+                // Close if a link is clicked
+                closeNav();
             }
+        });
+
+        $('.content-area ').click(function () {
+          // Close if the toggle looses focus
+          closeNav();
         });
 
         if(!$('body').hasClass('home') && $('body').hasClass('page')) {
